@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons_flutter/line_icons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,13 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Line Icons Flutter',
       theme: ThemeData(
-
-
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primaryColor:Colors.blue,
       ),
-      home:  LineIconsPage(),
+      home: const LineIconsPage(),
     );
   }
 }

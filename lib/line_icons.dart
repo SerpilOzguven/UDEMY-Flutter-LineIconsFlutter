@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:line_icons/line_icon.dart';
+import 'package:line_icons/line_icons.dart';
 
 class LineIconsPage extends StatefulWidget {
   const LineIconsPage({super.key});
@@ -13,7 +16,17 @@ class _LineIconsPageState extends State<LineIconsPage> {
       appBar: AppBar(
         title: Text('Line Icons'),
       ),
-      body: Container(),
+      body: Center(
+        child: Column(
+          children: [
+          Icon(Icons.person),
+          Icon(LineIcons.user),
+          LineIcon.user(),
+          Icon(LineIcons.values['code'],color: Colors.red,),
+          Icon(LineIcons.byName('code'),color: Colors.blue,),
+          ],
+        ),
+      ),
     );
   }
 }
